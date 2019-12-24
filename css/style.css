@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.totop{
+    position: fixed;
+    bottom: 25px;
+    right:25px;
+}
+
+.totop a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.473);
+    border-radius: 50%;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+body{
+    background-color: rgba(236, 236, 236, 0.87);
+}
+
+#navbar{
+    width: 100%;
+  
+}
+
+#navbar .navbar-wrap{
+    width: 100%;
+    height: 120px;
+    background-color: rgba(56, 31, 8, 0.493);
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#navbar .logo{
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/catbanner.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30%;
+    border:2px solid white;
+}
+
+#navbar .list-group{
+    display: flex;
+}
+
+#navbar .list{
+    
+}
+
+#navbar .list-a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 0 5px;
+    padding: 15px;
+}
+
+#navbar .list-a:hover{
+    background-color: coral;
+}
+
+#mainbox{
+    width:100%;
+}
+
+#mainbox #first{
+    width: 100%;
+}
+
+#first .first-wrap{
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: rgba(80, 80, 233, 0.582);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first .bg-cat{
+    width: 40%;
+    height: 50%;
+    background-image: url("../img/catfirst.jpg");
+    background-position: center;
+    background-size: cover;
+    border:2px solid white;
+    margin-right: 5px;
+    transition: .5s;
+}
+
+#first .bg-cat:hover{
+    background-image: url("../img/cathover.jpg");
+}
+
+#first .bg-txt{
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.575);
+    text-align: center;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+#first .bg-txt h1{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#first .bg-txt p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+#mainbox #second{
+    width: 100%;
+}
+
+#second .second-wrap {
+    width: 80%;
+    height: 100vh;
+    background-color: rgba(59, 59, 150, 0.61);
+    margin: 5px auto;
+}
+
+#second .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+
+}
+
+#second .mask span{
+    color: white;
+    background-color: cadetblue;
+    padding: 15px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 50%;
+}
+
+#second .banner{
+    background-image: url("../img/catbanner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+   
+}
+
+#second .banner:hover .mask{
+    
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#second .banner:hover .mask span{
+    
+    display: none;
+}
+
+#mainbox #third{
+    width: 100%;
+}
+
+#third .third-wrap{
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#third .groupA{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin:8px 0;
+    border:8px double rgb(225, 65, 100);
+    padding: 15px;
+    
+}
+
+#third .groupA .pic{
+    width: 200px;
+    height: 150px;
+    background-image: url('../img/cat1.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom:15px;
+    border-radius: 50%;
+    margin-top:0px;
+}
+
+#third .groupA .txt{
+    text-align: justify;
+    font-size: 18px;
+    height: 50%;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#third .groupB{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    justify-content:center;
+    align-items:center;
+    border:8px double rgb(142, 225, 65);
+    padding: 15px;
+    
+}
+
+#third .groupB .pic{
+    width: 200px;
+    height: 150px;
+    background-image: url('../img/cat2.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom:15px;
+    border-radius: 50%;
+    margin-top:0px;
+}
+
+#third .groupB .txt{
+    text-align: justify;
+    font-size: 18px;
+    height: 50%;
+    padding:10px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#third .groupC{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin:8px 0;
+    border:8px double rgb(225, 209, 65);
+    padding: 15px;
+    
+}
+
+#third .groupC .pic{
+    width: 200px;
+    height: 150px;
+    background-image: url('../img/cat3.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom:15px;
+    border-radius: 50%;
+    margin-top:0px;
+}
+
+#third .groupC .txt{
+    text-align: justify;
+    font-size: 18px;
+    height: 50%;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#third .groupC .pic:hover,#third .groupB .pic:hover,#third .groupA .pic:hover
+{
+    transform: scale(1.1 , 1.1)
+}
+
+
+#footer{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+    text-align: center;
+    margin-top:15px;
+}
+
+
+
+
+
+/* --------------991----------------- */
+
+
+@media screen and (max-width:991px) {
+
+body{
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+
+#navbar .navbar-wrap {
+    justify-content: center;
+    position: relative;
+}
+
+#navbar .logo {
+    order:3;
+}
+
+#navbar .list-group{
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 120px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#navbar .list{
+    width: 100%;
+    margin: 10px 0;
+}
+
+#navbar .list a{
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+#navbar .list-btn {
+    width: 40px;
+    height: 5px;
+    border-radius: 20%;
+    background-color:white;
+    position: absolute;
+    top:calc(50% - 5px);
+    left:5%;
+    box-shadow: 0 10px 0 white,0 -10px 0 white;
+}
+
+#navbar .list-btn:hover .list-group{
+    display: flex;
+}
+
+
+
+#first .first-wrap{
+    flex-direction: column-reverse;
+    height: unset;
+    width: 90%;
+    padding: 10px;
+}
+
+#first .bg-cat{
+    width:90%;
+    height: 40vh;
+    margin: 0;
+    margin-bottom: 5px;
+    
+}
+
+
+#first .bg-txt{
+    width:90%;
+    height:unset;
+    margin: 0;
+    
+}
+
+#second .second-wrap{
+    width: 90%;
+}
+
+#third .third-wrap{
+    width: 90%;
+    height:unset;
+    display: block;
+    background-color:rgba(255, 255, 255, 0.521);
+}
+
+#third .groupA,#third .groupB,#third .groupC
+{
+    border:unset;
+    margin: 0 10px;
+}
+
+#third .groupA .pic,#third .groupB .pic,#third .groupC .pic
+{
+    border-radius: 10%;
+    border:3px solid black;
+    width: 250px;
+}
+
+#third .groupA .txt,#third .groupB .txt,#third .groupC .txt
+{
+    background-color: rgba(65, 105, 225, 0.466);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
